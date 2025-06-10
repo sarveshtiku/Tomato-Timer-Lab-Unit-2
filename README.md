@@ -4,7 +4,7 @@ This project is a simple, interactive **Pomodoro-style timer** built as part of 
 
 The timer helps structure work sessions using the **Pomodoro Technique** — 25 minutes of focused work followed by 5-minute breaks. It's styled for clarity, supports dynamic interactions, and includes several stretch goal features.
 
-## ✅ Features Completed
+## Features Completed
 
 ### Core Functionality (Required)
 - ⏲️ Timer display updates every second using `setInterval`.
