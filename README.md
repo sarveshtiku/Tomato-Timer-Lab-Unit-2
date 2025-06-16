@@ -26,9 +26,6 @@ Deployed the web app on vercel: [App Link Here](https://tomato-timer-lab-unit-2.
 
 ## 📸 Screenshot
 
-> *Basic Version*
-<img width="306" alt="Screenshot 2025-06-09 at 16 01 21" src="https://github.com/user-attachments/assets/c45b8a5f-2db6-46f5-a2c6-d50089d57db6" />
-
 > *Version with Strecth Goals Achieved*
 <img width="1011" alt="Screenshot 2025-06-15 at 23 14 36" src="https://github.com/user-attachments/assets/27ecffe2-09eb-45ca-a5a2-85aedc28c348" />
 <img width="1052" alt="Screenshot 2025-06-15 at 23 15 05" src="https://github.com/user-attachments/assets/333b2338-6e71-4d5e-a2c5-84d522f6286f" />
