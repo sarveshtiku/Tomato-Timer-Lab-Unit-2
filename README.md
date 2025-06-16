@@ -1,6 +1,6 @@
 # 🍅 Tomato Timer — Pomodoro Web App
 
-This project is a simple, interactive **Pomodoro-style timer** built as part of the CodePath SITE Summer Internship Lab: *The Case of the Coded Message (Tomato Timer)*.
+This project is a simple, interactive **Pomodoro-style timer** built as part of the CodePath Summer Internship Lab: *The Case of the Coded Message (Tomato Timer)*.
 
 The timer helps structure work sessions using the **Pomodoro Technique** — 25 minutes of focused work followed by 5-minute breaks. It's styled for clarity, supports dynamic interactions, and includes several stretch goal features.
 Deployed the web app on vercel: [App Link Here](https://tomato-timer-lab-unit-2.vercel.app/)
