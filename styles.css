@@ -1,38 +1,432 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease;
 }
 
+/* Card Container */
 .container {
-    text-align: center;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::before {
+  content: "🍅 ";
+}
+
+h1::after {
+  content: " ⏰";
+}
+
+/* Timer Display */
 #timer-display {
-    margin: 20px 0;
-    font-size: 48px;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+#buttons {
+  margin-bottom: 20px;
 }
 
 #buttons button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+  margin: 8px 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+#buttons button:hover {
+  background-color: #f2f2f2;
+  border-color: #999;
+}
+
+/* Session Count */
 #session-count {
-    margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+  margin: 20px 0;
 }
 
-.light-theme {
-    background-color: white;
-    color: black;
+#session-count p {
+  margin: 5px 0;
 }
 
-.dark-theme {
-    background-color: #333;
-    color: white;
+/* Instructions (smaller text) */
+#instructions {
+  font-size: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Background Modes */
+body.study-mode {
+  background-color: #d3f9d8; /* light green */
+}
+
+body.break-mode {
+  background-color: #ffd6d6; /* light red */
+}
+
+body.paused-mode {
+  background-color: #eaeaea; /* light grey */
+}
+/* Card Container */
+.container {
+  background: #ffffff;
+  padding: 60px 70px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+h1 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Timer Display */
+#timer-display {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+#buttons button {
+  margin: 8px 10px;
+  padding: 14px 30px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Session Count */
+#session-count {
+  font-size: 16px;
+  color: #333;
+  margin: 25px 0;
+}
+
+/* Instructions */
+#instructions {
+  font-size: 12px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease;
+  perspective: 1500px; /* for 3D effect */
+}
+
+/* Card Container */
+.container {
+  background: #ffffff;
+  padding: 80px 90px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 550px;
+  transform: rotateX(5deg) rotateY(5deg);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: popIn 0.8s ease forwards;
+}
+
+.container:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Entry Animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotateX(20deg) rotateY(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(5deg) rotateY(5deg);
+  }
+}
+
+/* Header */
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::before {
+  content: "🍅 ";
+}
+
+h1::after {
+  content: " ⏰";
+}
+
+/* Timer Display */
+#timer-display {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Buttons */
+#buttons {
+  margin-bottom: 30px;
+}
+
+#buttons button {
+  margin: 10px 15px;
+  padding: 18px 40px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+#buttons button:hover {
+  background-color: #f2f2f2;
+  border-color: #999;
+  transform: scale(1.05);
+}
+
+/* Session Count */
+#session-count {
+  font-size: 18px;
+  color: #333;
+  margin: 30px 0;
+}
+
+/* Instructions */
+#instructions {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Background Modes */
+body.study-mode {
+  background-color: #d3f9d8; /* light green */
+}
+
+body.break-mode {
+  background-color: #ffd6d6; /* light red */
+}
+
+body.paused-mode {
+  background-color: #eaeaea; /* light grey */
+}
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease;
+  perspective: 1500px; /* for 3D effect */
+}
+
+/* Card Container */
+.container {
+  background: #ffffff;
+  padding: 80px 90px;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  transform: rotateX(5deg) rotateY(5deg);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  animation: popIn 1s ease forwards, float 4s ease-in-out infinite;
+}
+
+.container:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.04);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* Entry Animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotateX(20deg) rotateY(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(5deg) rotateY(5deg);
+  }
+}
+
+/* Floating Card Subtle Hover */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotateX(5deg) rotateY(5deg); }
+  50% { transform: translateY(-10px) rotateX(5deg) rotateY(5deg); }
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::before {
+  content: "🍅 ";
+}
+
+h1::after {
+  content: " ⏰";
+}
+
+/* Timer Display */
+#timer-display {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  animation: pulse 2s infinite;
+}
+
+/* Timer Pulse Animation */
+@keyframes pulse {
+  0% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+  50% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+  100% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+}
+
+/* Buttons */
+#buttons {
+  margin-bottom: 30px;
+}
+
+#buttons button {
+  margin: 10px 15px;
+  padding: 18px 45px;
+  font-size: 22px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#buttons button:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.07);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+#buttons button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Session Count */
+#session-count {
+  font-size: 20px;
+  color: #333;
+  margin: 30px 0;
+}
+
+/* Instructions */
+#instructions {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Background Modes */
+body.study-mode {
+  background-color: #d3f9d8;
+}
+
+body.break-mode {
+  background-color: #ffd6d6;
+}
+
+body.paused-mode {
+  background-color: #eaeaea;
 }
